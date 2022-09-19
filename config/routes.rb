@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/students" => "students#index"
   get "/students/:id" => "students#show"
+  post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
 end

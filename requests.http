@@ -3,3 +3,25 @@ GET http://localhost:3000/students.json
 ###
 
 GET http://localhost:3000/students/1.json
+
+###
+
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Dan Cross",
+  "email": "dan@dan.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+###
+
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "dan@dan.com",
+  "password": "password"
+}
