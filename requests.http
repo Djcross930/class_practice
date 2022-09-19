@@ -1,5 +1,5 @@
 GET http://localhost:3000/students.json
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjM2NDczODd9.thTy5vAtUqxV7gew0NDfGR3UAPkuVzPOdEI1cMLZvfs
 ###
 
 GET http://localhost:3000/students/1.json
@@ -10,8 +10,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Dan Cross",
-  "email": "dan@dan.com",
+  "name": "jim jimmy",
+  "email": "jim@jim.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -22,6 +22,23 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "dan@dan.com",
+  "email": "jim@jim.com",
   "password": "password"
+}
+###
+
+POST http://localhost:3000/students.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjM2NDg4MjV9.aFkjvGkITCtBMT8FMjJVK_Avnb7Mkhn6-p1-VwHlWwQ
+Content-Type: application/json
+
+{
+"first_name": "jim",
+"last_name": "jimmy",
+"email": "jim@jim.com",
+"phone_number": "333444322",
+"short_bio": "jimmy here",
+"linked_in": "Linkedin/jimmy",
+"twitter": "twitter.com/jimbo",
+"blog_website": "blogspot.jimmothy",
+"online_resume": "resume.jimathon.com"
 }
