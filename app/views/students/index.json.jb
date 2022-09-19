@@ -1,0 +1,9 @@
+@students.map do |student|
+  {
+    id: student.id,
+    experience: student.experiences,
+    education: student.educations,
+    skills: student.skills,
+    capstone: student.capstone
+  }
+end
